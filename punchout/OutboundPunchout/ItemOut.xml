@@ -1,0 +1,34 @@
+<ItemOut lineNumber="01" quantity="1">
+		<ItemID>
+			<SupplierPartID>107613</SupplierPartID>
+			<SupplierPartAuxiliaryID>107613</SupplierPartAuxiliaryID>
+		</ItemID>
+		<ItemDetail>
+			<UnitPrice>
+			<Money currency="USD">42.28</Money>
+			</UnitPrice>
+			<Description xml:lang="en">Sanford(R) Design(R) Artgum(R) Eraser, Small</Description>
+			<UnitOfMeasure>EA</UnitOfMeasure>
+			<Classification domain="UNSPSC">44121804</Classification>
+			<Extrinsic name="PR No.">PR516</Extrinsic>
+			<Extrinsic name="Requester">Vadim Linnik</Extrinsic>
+		</ItemDetail>
+		<ShipTo>
+			<Address isoCountryCode="US" addressID="">
+				<Name xml:lang="en"></Name>
+				<PostalAddress name="default">
+					<DeliverTo></DeliverTo>
+					<DeliverTo></DeliverTo>
+					<Street></Street>
+					<Street></Street>
+					<City></City>
+					<State></State>
+					<PostalCode></PostalCode>
+					<Country isoCountryCode="US">United States</Country>
+				</PostalAddress>
+				<Email name="default"></Email>
+				<Phone name="work"><TelephoneNumber><CountryCode isoCountryCode="US">1</CountryCode><AreaOrCityCode>111</AreaOrCityCode><Number>1111111</Number></TelephoneNumber></Phone>
+			</Address>
+		</ShipTo>		
+		<Comments></Comments>
+	</ItemOut>

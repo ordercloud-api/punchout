@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cXML SYSTEM "http://xml.cxml.org/schemas/cXML/1.1.010/cXML.dtd"[]>
+<cXML timestamp="" payloadID="" xml:lang="en-US">
+  <Header>
+    <From>
+      <Credential domain="">
+        <Identity></Identity>
+      </Credential>
+    </From>
+    <To>
+      <Credential domain="">
+        <Identity></Identity>
+      </Credential>
+    </To>
+    <Sender>
+      <Credential domain="">
+        <Identity></Identity>
+        <SharedSecret></SharedSecret>
+      </Credential>
+      <UserAgent>OrderCloud API</UserAgent>
+    </Sender>
+  </Header>
+  <Request>
+    <PunchOutSetupRequest operation="create">
+      <BuyerCookie></BuyerCookie>
+      <Extrinsic name="UserEmail"></Extrinsic>
+      <BrowserFormPost>
+        <URL></URL>
+      </BrowserFormPost>
+      <Contact role="endUser">
+        <Name xml:lang="en-US"></Name>
+        <Email></Email>
+      </Contact>
+      <SupplierSetup>
+        <URL></URL>
+      </SupplierSetup>
+      <ShipTo>
+        <Address addressID="">
+          <Name xml:lang="en-US"></Name>
+          <PostalAddress name="">
+            <DeliverTo></DeliverTo>
+            <Street></Street>
+            <City></City>
+            <State></State>
+            <PostalCode></PostalCode>
+            <Country isoCountryCode=""></Country>
+          </PostalAddress>
+        </Address>
+      </ShipTo>
+	  <SelectedItem>
+		<ItemID>
+			<SupplierPartID></SupplierPartID>
+			<SupplierPartAuxiliaryID>
+			</SupplierPartAuxiliaryID>
+		</ItemID>
+	  </SelectedItem>
+	</PunchOutSetupRequest>
+  </Request>
+</cXML>

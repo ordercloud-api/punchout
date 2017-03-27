@@ -1,0 +1,71 @@
+<cXML version="1.1" payloadID="" timestamp="">
+<Header>
+	<From>
+		<Credential domain="">
+			<Identity></Identity>
+		</Credential>
+	</From>
+	<To>
+		<Credential domain="">
+			<Identity></Identity>
+		</Credential>
+	</To>
+	<Sender>
+		<Credential domain="">
+			<Identity></Identity>
+			<SharedSecret></SharedSecret>
+		</Credential>
+		<UserAgent>OrderCloud Punchout</UserAgent>
+	</Sender>
+</Header>
+<Request deploymentMode="production">
+<OrderRequest>
+	<OrderRequestHeader orderID="" orderDate="" type="new">
+		<Total><Money currency="USD"></Money></Total>
+		<BillTo>
+		<Address isoCountryCode="US">
+			<PostalAddress>
+				<DeliverTo></DeliverTo>
+				<Street></Street>
+				<Street></Street>
+				<City></City>
+				<State></State>
+				<PostalCode></PostalCode>
+				<Country isoCountryCode="US">United States</Country>
+			</PostalAddress>			
+		</Address>
+		</BillTo>
+		<Payment><PCard number="" expiration=""/></Payment>
+		<Comments></Comments>
+	</OrderRequestHeader>
+	<ItemOut lineNumber="" quantity="">
+		<ItemID>
+			<SupplierPartID></SupplierPartID>
+			<SupplierPartAuxiliaryID></SupplierPartAuxiliaryID>
+		</ItemID>
+		<ItemDetail>
+			<UnitPrice>
+			<Money currency="USD"></Money>
+			</UnitPrice>
+			<Description xml:lang="en"></Description>
+			<UnitOfMeasure>EA</UnitOfMeasure>
+		</ItemDetail>
+		<ShipTo>
+			<Address isoCountryCode="US" addressID="">
+				<Name xml:lang="en"></Name>
+				<PostalAddress>
+					<DeliverTo></DeliverTo>
+					<Street></Street>
+					<Street></Street>
+					<City></City>
+					<State></State>
+					<PostalCode></PostalCode>
+					<Country isoCountryCode="US">United States</Country>
+				</PostalAddress>
+			</Address>
+		</ShipTo>
+		<Comments></Comments>
+	</ItemOut>
+</OrderRequest>
+</Request>
+</cXML>
