@@ -10,7 +10,7 @@ There are a number configurations needed to get all the systems involved to work
 
 * **Configure officemart.cs with OrderRequestUrl and SetupRequestUrl.** They will be provided by the seller. 
 
-*  **Configure officemart.cs with SecretHashKey. **One of the functions of punchout manager is to securely remember the user between the outgoing SetupRequest and the returning PunchoutOrderMessage. Instead of using a datasource and sending the ID along with the SetupRequest, this demo simply signs the cookie with the SecretHashKey as a way to know the values have not been tampered with. Any short secret phrase will do and it should also be considered a sensitive piece of data. You may decide a server side datasource is a smarter and more secure way to store session values. It’s also possible a seller system will have field size limits on the BuyerCookie which would also be solved by using a datasource.
+* **Configure officemart.cs with SecretHashKey.** One of the functions of punchout manager is to securely remember the user between the outgoing SetupRequest and the returning PunchoutOrderMessage. Instead of using a datasource and sending the ID along with the SetupRequest, this demo simply signs the cookie with the SecretHashKey as a way to know the values have not been tampered with. Any short secret phrase will do and it should also be considered a sensitive piece of data. You may decide a server side datasource is a smarter and more secure way to store session values. It’s also possible a seller system will have field size limits on the BuyerCookie which would also be solved by using a datasource.
 
 * **Configure officemart.cs with BrowserFormPostRedirect.** When the user returns from the external session with the PunchoutOrderMessage, the punchout manager needs to know where in the OrderCloud buying application to redirect the browser.
 
@@ -18,7 +18,7 @@ There are a number configurations needed to get all the systems involved to work
 
 * **Configure officemart.cs with the AllowedBuyerClientIds.** This is simply a check of the OrderCloud buyer application id to make sure the buyer is authorized to use the punchout.
 
-* Configure offciemart.cs with xpath mappings and values. This is where some cXML knowledge is helpful, but demopunchout.cs is a good starting point for data that will likely have to be exchanged with the seller. 
+* **Configure offciemart.cs with xpath mappings and values.** This is where some cXML knowledge is helpful, but demopunchout.cs is a good starting point for data that will likely have to be exchanged with the seller. 
 
 * **Configure order submit webhook.** This demo includes a controller to take an OrderCloud order submit web hook (configured in the dashboard) as a trigger to send along any orders to the punchout sellers via the OrderRequestUrl. If that’s the point when your seller’s OrderRequest should be posted, configure a web hook to point to http://{your.project.domain}/webhookordersubmit
 
